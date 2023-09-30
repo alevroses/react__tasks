@@ -1,6 +1,6 @@
 :root {
-  --first-color: #3f3b6c;
-  --second-color: #624f82;
+  --first-color: #0a0a23;
+  --second-color: #1b1b32;
   --third-color: #9f73ab;
   --fourth-color: #a3c7d6;
   --fitfh-color: #f5f6f7;
@@ -16,7 +16,7 @@
 html,
 body {
   color: white;
-  background-color: var(--dark-mode);
+  background-color: var(--first-color);
   font-family: Lato, sans-serif;
 }
 
@@ -39,6 +39,7 @@ body {
 .section {
   width: 80%;
   min-height: 85dvh;
+  max-width: 940px;
   margin: 20px;
   border-radius: 25px;
   background-color: var(--second-color);
@@ -50,7 +51,7 @@ body {
 
 .section__title {
   height: 40px;
-  margin: 10px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
