@@ -9,40 +9,35 @@
 
 .form {
   width: 90%;
-  height: auto;
   position: relative;
 }
 
 .form__textarea {
   width: 100%;
-  min-height: 80px;
+  height: 80px;
+  padding: 15px 35px 15px 15px;
   border-radius: 25px;
-  padding: 15px 40px 15px 15px;
-  color: var(--fitfh-color);
-  background-color: var(--first-color);
   font-weight: bold;
   font-family: Lato, sans-serif;
+  color: var(--fitfh-color);
+  background-color: var(--first-color);
   border: 1px solid var(--first-color);
   resize: none;
   outline: none;
 }
 
 /* Estilos de la barra de desplazamiento */
-textarea::-webkit-scrollbar {
+.form__textarea::-webkit-scrollbar {
   width: 5px;
 }
 
-textarea::-webkit-scrollbar-track {
+.form__textarea::-webkit-scrollbar-track {
   background: var(--second-color);
 }
 
-textarea::-webkit-scrollbar-thumb {
-  background: var(--second-color);
+.form__textarea::-webkit-scrollbar-thumb {
+  background-color: var(--fitfh-color);
   border-radius: 5px;
-}
-
-textarea::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 .button {
@@ -50,44 +45,21 @@ textarea::-webkit-scrollbar-thumb:hover {
   height: 30px;
   border: none;
   border-radius: 50%;
+  background-color: var(--first-color);
+  cursor: pointer;
   position: absolute;
   top: calc(50% - 15px);
   right: 10px;
-  background-color: var(--first-color);
-  cursor: pointer;
 }
 
 .button__icon {
   width: 100%;
   height: 100%;
-  fill: var(--dark-mode);
+  fill: var(--fourth-color);
 }
 
-/* .tarea-formulario {
-	height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.tarea-input {
-  width: 100%;
-  font-size: 18px;
-  background-color: white;
-  padding: 14px 32px 14px 16px;
-  border: 2px solid #5ea077;
-  outline: none;
+.button__icon:hover {
+  fill: var(--fitfh-color);
 }
 
 
-.tarea-boton {
-	width: 100%;
-  padding: 16px;
-  font-size: 18px;
-  font-family: Roboto, sans-serif;
-  border: none;
-  cursor: pointer;
-  background: #5ea077;
-  color: #fff;
-  text-transform: capitalize;
-} */

@@ -1,6 +1,7 @@
-.tareas-lista-contenedor {
+.tasks-list {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 15px;
+	margin: 15px;
 }

@@ -1,4 +1,4 @@
-# react__task-list
+# react\_\_task-list
 
 This is a basic project made with React as practice.
 
@@ -8,11 +8,11 @@ This is a basic project made with React as practice.
 graph LR
   A[root \n index] --> B[App]
   B --> C[figure > img \n Logo]
-  B --> E[section]
+  B --> E[main]
   E --> F[h1]
   E --> G[TaskList \n Component]
   G --> H[TaskForm \n Component]
-  G --> I[div]
+  G --> I[section]
   I --> J[Task \n Component]
 ```
 
