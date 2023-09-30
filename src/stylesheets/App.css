@@ -27,6 +27,7 @@ body {
   align-items: flex-end;
   justify-content: flex-end;
   padding-right: 15px;
+  margin: 8px;
 }
 
 .figure__img {
@@ -57,41 +58,3 @@ body {
   align-items: center;
   font-family: Lato, sans-serif;
 }
-
-/* .aplicacion-tareas {
-  width: 100dvw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.freecodecamp-logo-contenedor {
-  width: 100%;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.freecodecamp-logo {
-  width: 250px;
-  height: 40px;
-}
-
-.tareas-lista-principal {
-  width: 300px;
-  min-height: 400px;
-  background-color: #d0d0d5;
-  padding: 25px;
-  margin: 10px;
-  justify-content: center;
-  border-radius: 26px;
-}
-
-h1 {
-  color: #1b1b32;
-  font-size: 25px;
-  font-family: Roboto, sans-serif;
-  text-align: center;
-  margin: 20px 0;
-} */
