@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react";
 import "../stylesheets/TaskForm.css";
 import { v4 as uuidv4 } from "uuid";
 
@@ -41,4 +41,29 @@ function TareaFormulario(props) {
   );
 }
 
-export { TareaFormulario };
+export { TareaFormulario }; */
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "../stylesheets/TaskForm.css";
+import { AiOutlinePlusCircle } from "react-icons/ai";
+
+function TaskForm() {
+  return (
+    <form className="form" action="">
+      <textarea
+        className="form__textarea"
+        name=""
+        id=""
+        cols="10"
+        rows="1" /* XD */
+        placeholder="Write a new Task..."
+      ></textarea>
+      <button className="button">
+        <AiOutlinePlusCircle className="button__icon" />
+      </button>
+    </form>
+  );
+}
+
+export { TaskForm };

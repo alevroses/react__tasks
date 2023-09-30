@@ -1,0 +1,96 @@
+:root {
+  --first-color: #3f3b6c;
+  --second-color: #624f82;
+  --third-color: #9f73ab;
+  --fourth-color: #a3c7d6;
+  --fitfh-color: #f5f6f7;
+  --dark-mode: #1b1b32;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: white;
+  background-color: var(--dark-mode);
+  font-family: Lato, sans-serif;
+}
+
+.figure {
+  width: 100%;
+  height: 6dvh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+.figure__img {
+  width: 60%;
+  max-width: 320px;
+
+  /* height: auto; */
+}
+
+.section {
+  width: 80%;
+  min-height: 85dvh;
+  margin: 20px;
+  border-radius: 25px;
+  background-color: var(--second-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.section__title {
+  height: 40px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato, sans-serif;
+}
+
+/* .aplicacion-tareas {
+  width: 100dvw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.freecodecamp-logo-contenedor {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.freecodecamp-logo {
+  width: 250px;
+  height: 40px;
+}
+
+.tareas-lista-principal {
+  width: 300px;
+  min-height: 400px;
+  background-color: #d0d0d5;
+  padding: 25px;
+  margin: 10px;
+  justify-content: center;
+  border-radius: 26px;
+}
+
+h1 {
+  color: #1b1b32;
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+} */

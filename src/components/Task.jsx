@@ -1,9 +1,9 @@
-import React from "react";
+/* import React from "react";
 import "../stylesheets/Task.css";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 function Tarea({
-  id,
+  id, 
   texto,
   completada,
   completarTarea,
@@ -33,4 +33,4 @@ function Tarea({
   );
 }
 
-export { Tarea };
+export { Tarea }; */
