@@ -1,23 +1,27 @@
-import "./App.css";
-import freeCodeCampLogo from "./images/freecodecamp-logo.png";
-import { ListaDeTareas } from "./components/TasksList";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./stylesheets/App.css";
+import Logo from "./images/freecodecamp-logo.png";
+/* import { TaskForm } from "./components/TaskForm"; */
+import { TasksList } from "./components/TasksList";
 
 function App() {
   return (
-    <div className="aplicacion-tareas">
-      <div className="freecodecamp-logo-contenedor">
+    <>
+      <figure className="figure">
         <img
-          className="freecodecamp-logo"
-          src={freeCodeCampLogo}
-          alt="logo freecodecamp"
+          className="figure__img"
+          src={Logo}
+          alt="Logo"
         />
-      </div>
-      <div className="tareas-lista-principal">
-        <h1>Mis Tareas</h1>
-        <ListaDeTareas />
-      </div>
-    </div>
+      </figure>
+      <main className="section">
+        <h1 className="section__title">My Tasks</h1>
+        {/* <TaskForm /> */}
+        <TasksList />
+      </main>
+    </>
   );
 }
 
-export default App;
+export { App };

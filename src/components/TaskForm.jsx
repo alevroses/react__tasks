@@ -1,44 +1,49 @@
 import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
 import "../stylesheets/TaskForm.css";
+import { AiOutlinePlusCircle } from "react-icons/ai";
 import { v4 as uuidv4 } from "uuid";
 
-function TareaFormulario(props) {
+function TaskForm(props) {
   const [input, setInput] = useState("");
 
-  const manejarCambio = (e) => {
+  const handleChange = (e) => {
     setInput(e.target.value);
   };
 
-  const manejarEnvio = (e) => {
+  const handleSending = (e) => {
     e.preventDefault();
 
-    const TareaNueva = {
+    const newTask = {
       id: uuidv4(),
-      texto: input,
-      completada: false,
+      text: input,
+      completed: false,
     };
 
-    props.onSubmit(TareaNueva);
+    props.onSubmit(newTask);
   };
 
   return (
     <form
-      className="tarea-formulario"
+      className="form"
       action=""
-      onSubmit={manejarEnvio}
+      onSubmit={handleSending}
     >
-      <input
-        className="tarea-input"
+      <textarea
+        className="form__textarea"
         type="text"
-        placeholder="Ingresa una Tarea"
-        name="texto"
-        onChange={manejarCambio}
-      />
-      <button className="tarea-boton">
-        Agregar Tarea
+        name="text"
+        id=""
+        cols="30"
+        rows="1"
+        placeholder="Write a new Task..."
+        onChange={handleChange}
+      ></textarea>
+      <button className="button">
+        <AiOutlinePlusCircle className="button__icon" />
       </button>
     </form>
   );
 }
 
-export { TareaFormulario };
+export { TaskForm };

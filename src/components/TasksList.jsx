@@ -1,56 +1,58 @@
 import React, { useState } from "react";
-import { TareaFormulario } from "./TaskForm";
-import { Tarea } from "./Task";
+import ReactDOM from "react-dom/client";
 import "../stylesheets/TasksList.css";
+import { TaskForm } from "./TaskForm";
+import { Task } from "./Task";
 
-function ListaDeTareas() {
-  const [tareas, setTareas] = useState([]);
+function TasksList() {
+  const [tasks, setTasks] = useState([]);
 
-  const agregarTarea = (tarea) => {
-    if (tarea.texto.trim()) {
-      tarea.texto = tarea.texto.trim();
+  const addTask = (task) => {
+    if (task.text.trim()) {
+      task.text = task.text.trim();
 
-      const tareasActualizadas = [tarea, ...tareas];
-      setTareas(tareasActualizadas);
+      const updatedTasks = [task, ...tasks];
+      setTasks(updatedTasks);
     }
   };
 
-  const eliminarTarea = (id) => {
-    const tareasActualizadas = tareas.filter(
-      (tarea) => tarea.id !== id
+  const deleteTask = (id) => {
+    const updatedTasks = tasks.filter(
+      (task) => task.id !== id
     );
-    setTareas(tareasActualizadas);
+
+    setTasks(updatedTasks);
   };
 
-  const completarTarea = (id) => {
-    const tareasActualizadas = tareas.map(
-      (tarea) => {
-        if (tarea.id === id) {
-          tarea.completada = !tarea.completada;
-        }
-        return tarea;
+  const completeTask = (id) => {
+    const updatedTasks = tasks.map((task) => {
+      if (task.id === id) {
+        task.completed = !task.completed;
       }
-    );
-    setTareas(tareasActualizadas);
+
+      return task;
+    });
+
+    setTasks(updatedTasks);
   };
 
   return (
     <>
-      <TareaFormulario onSubmit={agregarTarea} />
-      <div className="tareas-lista-contenedor">
-        {tareas.map((tarea ) => (
-          <Tarea
-            key={tarea.id}
-            id={tarea.id}
-            texto={tarea.texto}
-            completada={tarea.completada}
-            completarTarea={completarTarea}
-            eliminarTarea={eliminarTarea}
+      <TaskForm onSubmit={addTask} />
+      <section className="tasks-list">
+        {tasks.map((task) => (
+          <Task
+            key={task.id}
+            id={task.id}
+            text={task.text}
+            completed={task.completed}
+            completeTask={completeTask}
+            deleteTask={deleteTask}
           />
         ))}
-      </div>
+      </section>
     </>
   );
 }
 
-export { ListaDeTareas };
+export { TasksList };

@@ -1,6 +1,20 @@
-# react__tasks
+# react__task-list
 
 This is a basic project made with React as practice.
+
+## Project Structure
+
+```mermaid
+graph LR
+  A[root \n index] --> B[App]
+  B --> C[figure > img \n Logo]
+  B --> E[main]
+  E --> F[h1]
+  E --> G[TaskList \n Component]
+  G --> H[TaskForm \n Component]
+  G --> I[section]
+  I --> J[Task \n Component]
+```
 
 ## Getting Started with Create React App
 

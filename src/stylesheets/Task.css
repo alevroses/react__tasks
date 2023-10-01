@@ -1,8 +1,18 @@
-.tarea-contenedor {
+:root {
+  --first-color: #0a0a23;
+  --second-color: #1b1b32;
+  --third-color: #9f73ab;
+  --fourth-color: #a3c7d6;
+  --fitfh-color: #f5f6f7;
+  --dark-mode: #1b1b32;
+}
+
+.task-container {
+  /* width: 100%; */
   width: 100%;
-  min-width: 65px;
+  max-width: 280px;
   background-color: #1b1b32;
-  margin: 5px 0;
+  margin: 5px;
   padding: 8px 15px 8px 20px;
   display: flex;
   justify-content: space-between;
@@ -13,19 +23,19 @@
 }
 
 /* Colores */
-.tarea-contenedor:nth-child(3n + 1) {
+.task-container:nth-child(3n + 1) {
   background-color: #1b1b32;
 }
 
-.tarea-contenedor:nth-child(3n + 2) {
+.task-container:nth-child(3n + 2) {
   background-color: #2a2a40;
 }
 
-.tarea-contenedor:nth-child(3n + 3) {
+.task-container:nth-child(3n + 3) {
   background-color: #3b3b4f;
 }
 
-.tarea-texto {
+.task-text {
   width: 100%;
   height: 100%;
   font-size: 20px;
@@ -34,7 +44,7 @@
   overflow-wrap: anywhere; /*  */
 }
 
-.tarea-icono {
+.task-icon {
   width: 25px;
   height: 25px;
   margin: 5px;
@@ -42,7 +52,7 @@
 
 /* Tarea Completada */
 
-.tarea-contenedor.completada {
+.task-container.completed {
   background-color: #935fc0;
   text-decoration: line-through;
 }
