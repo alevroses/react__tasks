@@ -1,6 +1,8 @@
 # react__task-list
 
-This is a basic project made with React as practice.
+This is a [basic project](https://alevroses.github.io/react__tasks/) made with React as practice.
+
+![responsive](https://i.postimg.cc/TPVY4TZp/tasks.png)
 
 ## Project Structure
 
