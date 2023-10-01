@@ -21,12 +21,12 @@ body {
 }
 
 .figure {
-  width: 100%;
+  width: 90dvw;
   height: 6dvh;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
-  padding-right: 15px;
+  justify-content: center;
+  /* padding-right: 15px; */
   margin: 8px;
 }
 

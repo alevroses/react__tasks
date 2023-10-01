@@ -18,6 +18,8 @@ body {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
 }
 
 code {
@@ -25,7 +27,7 @@ code {
 }
 
 #root {
-  width: 100dvw;
+  width: 98dvw;
   height: auto;
   display: flex;
   flex-wrap: wrap;
