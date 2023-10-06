@@ -1,0 +1,16 @@
+.figure {
+  width: 90dvw;
+  height: 6dvh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  /* padding-right: 15px; */
+  margin: 8px;
+}
+
+.figure__logo {
+  width: 60%;
+  max-width: 320px;
+
+  /* height: auto; */
+}

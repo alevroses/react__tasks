@@ -1,7 +1,29 @@
+.main {
+  width: 80%;
+  min-height: 85dvh;
+  max-width: 940px;
+  margin: 20px;
+  border-radius: 25px;
+  background-color: var(--second-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.main__title {
+  height: 40px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato, sans-serif;
+}
+
 .tasks-list {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px;
 }
